@@ -26,4 +26,12 @@ class Advent2022Suite extends munit.FunSuite {
     val expected = 12
     assertEquals(obtained, expected)
   }
+
+  test("Day3-1") {
+    val data = loadData3("day3-sample")
+    val obtained = ruckSackPrioritySum(data)
+    val expected = 157
+    assertEquals(obtained, expected)
+  }
+
 }
