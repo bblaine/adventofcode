@@ -34,4 +34,18 @@ class Advent2022Suite extends munit.FunSuite {
     assertEquals(obtained, expected)
   }
 
+  test("Day4-1"){
+    val data = loadData4("day4-sample")
+    val obtained = assignmentContainsSum(data)
+    val expected = 2
+    assertEquals(obtained, expected)
+  }
+
+  test("Day4-2"){
+    val data = loadData4("day4-sample")
+    val obtained = assignmentOverlapSum(data)
+    val expected = 4
+    assertEquals(obtained, expected)
+  }
+
 }
