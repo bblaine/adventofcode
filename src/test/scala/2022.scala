@@ -48,4 +48,27 @@ class Advent2022Suite extends munit.FunSuite {
     assertEquals(obtained, expected)
   }
 
+  test("Day6-1"){
+    var obtained = packetMarker("mjqjpqmgbljsphdztnvjfqwrcgsmlb")
+    var expected = 7
+    assertEquals(obtained, expected)
+
+    obtained = packetMarker("bvwbjplbgvbhsrlpgdmjqwftvncz")
+    expected = 5
+    assertEquals(obtained, expected)
+
+    obtained = packetMarker("nppdvjthqldpwncqszvftbrmjlhg")
+    expected = 6
+    assertEquals(obtained, expected)
+
+    obtained = packetMarker("nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg")
+    expected = 10
+    assertEquals(obtained, expected)
+
+    obtained = packetMarker("zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw")
+    expected = 11
+    assertEquals(obtained, expected)
+
+  }
+
 }
